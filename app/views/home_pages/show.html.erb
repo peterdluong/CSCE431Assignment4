@@ -1,0 +1,33 @@
+<div style="text-align: center">
+<p id="notice"><%= notice %></p>
+
+<h1>Showing book details for <%= @home_page.title%></h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @home_page.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @home_page.author %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @home_page.genre %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @home_page.price %>
+</p>
+
+<p>
+  <strong>Published Date:</strong>
+  <%= @home_page.publishedDate %>
+</p>
+
+<button type="button"><%= link_to 'Edit', edit_home_page_path(@home_page) %></button>
+<button type="button"><%= link_to 'Back', home_pages_path %> </button>
+</div>

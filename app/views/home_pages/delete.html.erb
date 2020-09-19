@@ -1,0 +1,8 @@
+<div style="text-align: center">
+<h1>Delete <%= @home_page.title%></h1>
+
+<p> Are you sure you want to delete the book <%= @home_page.title%></p>
+
+# <button type="button"><%= link_to 'Delete from Library', home_page, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+<button type="button"><%= link_to 'Back', home_pages_path %></button>
+</div>

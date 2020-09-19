@@ -1,0 +1,8 @@
+<div style="text-align: center">
+<h1>Editing book details for <%= @home_page.title%></h1>
+
+<%= render 'form', home_page: @home_page %>
+
+<button type="button"><%= link_to 'Show', @home_page %></button>
+<button type="button"><%= link_to 'Back', home_pages_path %></button>
+</div>
